@@ -65,6 +65,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+# paso 3.1 es el paso intermedio que se acaba de crear con el Auth
     'allauth.account.middleware.AccountMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -156,4 +157,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # agregar apps para Auth - paso 4
 LOGIN_REDIRECT_URL = reverse_lazy('index')
-SITE_ID = 3
+SITE_ID = 4
